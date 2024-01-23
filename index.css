@@ -1,0 +1,333 @@
+@font-face {
+    font-family: font;
+    src: url("fontUpdate.ttf");
+}
+@font-face {
+    font-family: fontNum;
+    src: url("numFont.otf");
+}
+body {
+    background-color: #070719;
+    caret-color: greenyellow;
+    overflow-x: hidden;
+} 
+.introText {
+    color: white;
+    font-family:font;
+    margin-left: 10%;
+    font-size: 100px;
+}
+
+.bag {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+textarea {
+    margin: 5%;
+    height: 70%;
+    font-size: 25px;
+    padding-left: 5%;
+    line-height: 1;
+    padding-right: 0%;
+    padding-top: 5%;
+    resize: none;
+    background-color: #003459;
+    font-family: font;
+    width: 80%; 
+    border: white solid 2px;
+    border-radius: 10px;
+    color: white;
+}
+
+.introText:nth-child(odd) {
+    grid-row: span 3;
+}
+
+.introText:nth-child(even) {
+    grid-row: span 2;
+}
+
+textarea::placeholder {
+    font-size: 25px;
+    text-align: left;
+    position: relative;
+    top: 5%;
+    font-family: font;
+    color: white;
+}
+
+.greet {
+    color: wheat;
+}
+
+option {
+    font-family: font;
+    color: white;
+}
+#filter {
+    position: absolute;
+    float: right;
+    right: 2%;
+}
+.label-filter {
+    position: absolute;
+    right: 15%;
+    top: 145%;
+    color: wheat;
+    font-family: font;
+    font-size: 28px;
+}
+select {
+    height: 45px;
+    width: 150px;
+    background-color: #003459;
+    color: white;
+    font-family: font;
+    font-size: 25px;
+    border: white solid 2px;
+    border-radius: 10px;
+}
+
+select::selection {
+    color: white;
+}
+
+.job-label {
+    color: wheat;
+    font-family: font;
+    font-size: 25px;
+    padding-top: 5%;
+}
+
+form {
+    padding-top: 5%;
+}
+
+.stipend-input {
+    float: right;
+    height: 40px;
+    width: 150px;
+    background-color: #003459;
+    color: white;
+    font-size: 25px;
+    font-family: fontNum;
+    position: relative;
+    top: -5%;
+    right: 5%;
+    border: white solid 2px;
+    border-radius: 10px;
+}
+
+#stipend-label {
+    color: wheat;
+    font-family: font;
+    font-size: 25px;
+    position: relative;
+    right: -13%;
+}
+
+.upload {
+    position: relative;
+    left: -60%;
+    top: -40%;
+    height: 45px;
+    width: 150px;
+    font-size: 30px;
+    font-family: font;
+    background-color: #003459;
+    color: white;
+    border: white solid 2px;
+    border-radius: 10px;
+}
+
+.home-check-label {
+    position: relative;
+    left: -90%;
+    top: 20%;
+    color: wheat;
+    font-family: font;
+    font-size: 20px;
+}
+.check-box {
+    position: relative;
+    left: -70%;
+    top: -7%;
+}
+.intro-fetch {
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    color: wheat;
+    font-size: 25px;
+    font-family: font;
+}
+.jobss {
+    color: white;
+}
+/*.jobsHorScroll {
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}*/
+.jobsHorScroll::-webkit-scrollbar {
+    width: 80%;
+    background-color: #00D0FF;
+    border-radius: 10px;
+}
+.jobsHorScroll::-webkit-scrollbar-thumb {
+    background-color: #08084A;
+    border-radius: 10px;
+    width: 10px;
+}
+body::-webkit-scrollbar {
+    background-color: #070719;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #00D0FF;
+    border-radius: 10px;
+}/*
+.job-des {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    white-space: normal;
+    height: 60vh;
+    width: 50vh;
+    border: wheat solid 5px;
+    font-size: 20px;
+    font-family: font;
+    background-color: white;
+    margin-left: 0%;
+    margin-top: 8%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}*/
+.jobsHorScroll {
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;  /* Added flex property */
+}
+
+.job-des {
+    white-space: normal;
+    height: 60vh;
+    width: 50vh;
+    border: wheat solid 5px;
+    font-size: 20px;
+    font-family: font;
+    background-color: white;
+    margin-left: 0%;
+    margin-top: 8%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    flex: 0 0 auto;  /* Added flex property */
+    margin-right: 10px;  /* Added margin-right property */
+}
+
+.job-stipend {
+    font-family: fontNum;
+    font-size: 30px;
+}
+.job-type {
+    font-family: font;
+    font-size: 30px;
+}
+.ges {
+    color: blueviolet;
+    padding: 10px;
+    word-wrap: break-word;
+    padding: 20px;
+    font-size: 30px;
+}
+.job-content {
+    word-wrap: break-all;
+    padding: 20px;
+}
+.job-des .jobHeader {
+    position: relative;
+    transform: translateY(-45%);
+    color: black;
+    left: 33%;
+    font-size: 35px;
+}
+.animation-box {
+    width: 10px;
+    height: 10px;
+    background: #6ab8ff;
+    position: relative;
+    animation: mymove 5s infinite;
+    border-radius: 30px;
+    opacity: 0.6;
+    z-index: -1;
+}
+.animation-box:hover {
+    background-color: aqua;
+}
+#box1 {
+    height: 15vh;
+    width: 15vh;
+    position: absolute;
+    left: 0%;
+    top: 30%;
+    animation: mymove 5s infinite;
+}
+#box2 {
+    height: 15vh;
+    width: 15vh;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    animation: mymove 5s infinite;
+    border-radius: 35px;
+}
+#box3 {
+    height: 12vh;
+    width: 12vh;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    animation: mymove 5s infinite;
+}
+#box4 {
+    height: 15vh;
+    width: 15vh;
+    position: absolute;
+    left: 60%;
+    top: 55%;
+    animation: mymove 5s infinite;
+}
+#box5 {
+    height: 10vh;
+    width: 13vh;
+    position: relative;
+    left: 80%;
+    top: 20%;
+    animation: mymove 5s infinite;
+}
+#box6 {
+    height: 20vh;
+    width: 20vh;
+    position: absolute;
+    left: 90%;
+    top: 30%;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+

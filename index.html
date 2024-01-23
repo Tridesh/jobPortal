@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>JobSwift</title>
+</head>
+<body>
+    <div class="bag">
+        <p class="introText"><span class="greet">Welcome to JobSwift</span> Your IT job hub for easy posting discovery and career empowerment!
+        </p>
+        <textarea class="jobInfo" type="text" placeholder="Job Description" rows="5" cols="60"></textarea>
+        <form id="form-custom">
+            <label class="job-label" for="job-options">Job Type:</label>
+            <select id="job-options" name="jobs">
+                <option value="select">Select</option>
+                <option value="Internship">Internship</option>
+                <option value="Contract">Contract</option>
+                <option value="Fulltime Job">Full-time Job</option>
+                <option value="Other">Other</option>
+            </select>
+            <label class="stipend" id="stipend-label" for="stipend">Stipend:</label>
+            <input id="stipend" class="stipend-input" type="number">
+            <button type = "submit" class="upload">Upload</button>
+            <label class="home-check-label" for="home-check">I verify that all the information are correct</label>
+            <input id="home-check" class="check-box" type="checkbox">
+        </form>
+    </div>
+    <div class="intro-fetch">Down below you can check the <span class="jobss">jobs</span> available *_*</div> 
+    
+    <label for = "filter" class = "label-filter">Filter by Type:</label>
+    <select id = "filter">
+        <option value="All">All</option>
+        <option value="Internship">Internship</option>
+        <option value="Contract">Contract</option>
+        <option value="Fulltime Job">Full-time Job</option>
+        <option value="Other">Other</option> 
+    </select>
+    <section class="jobsHorScroll"></section>
+    <div id="box1" class="animation-box"></div>
+    <div id="box2" class="animation-box"></div>
+    <div id="box3" class="animation-box"></div>
+    <div id="box4" class="animation-box"></div>
+    <div id="box5" class="animation-box"></div>
+    <div id="box6" class="animation-box"></div>
+    <script src="index.js"></script>
+</body>
+</html>
